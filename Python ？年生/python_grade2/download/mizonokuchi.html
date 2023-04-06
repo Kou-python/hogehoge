@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7d068dbf6d8dcdea80738fd7b38e684 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f7d068dbf6d8dcdea80738fd7b38e684" ></div>
+        
+</body>
+<script>    
+    
+            var map_f7d068dbf6d8dcdea80738fd7b38e684 = L.map(
+                "map_f7d068dbf6d8dcdea80738fd7b38e684",
+                {
+                    center: [35.5993584, 139.6104456],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78b4df98a067318e1fa981c620ac863b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            var marker_dcfe270faf7fdc6f75e7406012e7a373 = L.marker(
+                [35.5993584, 139.6104456],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_dcfe270faf7fdc6f75e7406012e7a373.bindTooltip(
+                `<div>
+                     ＪＲ東日本ホテルメッツ溝ノ口
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_804e49778edf6729aba746f6c5b8c364 = L.marker(
+                [35.6012086, 139.606425],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_804e49778edf6729aba746f6c5b8c364.bindTooltip(
+                `<div>
+                     オーケー溝ノ口店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f097e93ea1f946fe3e0756955cfdaad = L.marker(
+                [35.5951658, 139.6204899],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_6f097e93ea1f946fe3e0756955cfdaad.bindTooltip(
+                `<div>
+                     かながわサイエンスパーク内郵便局
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ff511db30dbed9315fb087887d7348d = L.marker(
+                [35.595194, 139.6089027],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_5ff511db30dbed9315fb087887d7348d.bindTooltip(
+                `<div>
+                     すえなが地域包括支援センター
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_623ca2d372e4ec7d36aa76b755bd1fd9 = L.marker(
+                [35.5986289, 139.6139266],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_623ca2d372e4ec7d36aa76b755bd1fd9.bindTooltip(
+                `<div>
+                     セレサ川崎農業協同組合高津支店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2df2399a0f408ddf92023491bad14e66 = L.marker(
+                [35.5989517, 139.6121081],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_2df2399a0f408ddf92023491bad14e66.bindTooltip(
+                `<div>
+                     ノクティプラザ１
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57ad207b2c3985719571e67503847b64 = L.marker(
+                [35.5989822, 139.6129235],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_57ad207b2c3985719571e67503847b64.bindTooltip(
+                `<div>
+                     ノクティプラザ２（マルイファミリー溝口）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07535475c005f4f777e7da09e9453432 = L.marker(
+                [35.5643465, 139.6158614],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_07535475c005f4f777e7da09e9453432.bindTooltip(
+                `<div>
+                     ひさすえ地域包括支援センター
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_745f9dd712217bc4cb8e75e4ae59451b = L.marker(
+                [35.6000876, 139.6124761],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_745f9dd712217bc4cb8e75e4ae59451b.bindTooltip(
+                `<div>
+                     ムサシボウル
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc347fa92f1ffb49019a4cf276da372 = L.marker(
+                [35.5932099, 139.5936124],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_4fc347fa92f1ffb49019a4cf276da372.bindTooltip(
+                `<div>
+                     リ・ケア向ヶ丘地域包括支援センター
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83a8253920044686b5a1883638c64008 = L.marker(
+                [35.5987641, 139.6133956],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_83a8253920044686b5a1883638c64008.bindTooltip(
+                `<div>
+                     安藤整形外科
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a21c3b4edbd79668635f58ff7e23120 = L.marker(
+                [35.6008157, 139.6132596],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_4a21c3b4edbd79668635f58ff7e23120.bindTooltip(
+                `<div>
+                     医療法人社団亮正会総合高津中央病院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce262f9a385f4eb5ab273c3463cab6cd = L.marker(
+                [35.6001792, 139.6117948],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_ce262f9a385f4eb5ab273c3463cab6cd.bindTooltip(
+                `<div>
+                     横浜銀行溝口支店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bb7954fd49d7b4b7849d02e3add83ab = L.marker(
+                [35.6089486, 139.5936157],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_6bb7954fd49d7b4b7849d02e3add83ab.bindTooltip(
+                `<div>
+                     介護老人保健施設樹の丘
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58c8dba392891aa6ad4225b54cae97b4 = L.marker(
+                [35.5988602, 139.6121507],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_58c8dba392891aa6ad4225b54cae97b4.bindTooltip(
+                `<div>
+                     溝ノ口ノクティビル内郵便局
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26cd29543e31ed052f7cebcae0be532d = L.marker(
+                [35.6001621, 139.6145922],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_26cd29543e31ed052f7cebcae0be532d.bindTooltip(
+                `<div>
+                     溝ノ口中央通郵便局
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae6c139ddc7287d25d4137318ef0c0aa = L.marker(
+                [35.5994028, 139.6142571],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_ae6c139ddc7287d25d4137318ef0c0aa.bindTooltip(
+                `<div>
+                     溝口レジデンス
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d9bfc01d0baa5d502028d927f9bf0f3 = L.marker(
+                [35.6002795, 139.6140371],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_2d9bfc01d0baa5d502028d927f9bf0f3.bindTooltip(
+                `<div>
+                     城南信用金庫溝ノ口支店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_935c50aa6964d962ca25becd5c5684d8 = L.marker(
+                [35.5986438, 139.6145399],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_935c50aa6964d962ca25becd5c5684d8.bindTooltip(
+                `<div>
+                     神奈川県かながわ労働センター川崎支所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03c198957f0ea1de2a6af7916ca81b15 = L.marker(
+                [35.5987921, 139.6145292],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_03c198957f0ea1de2a6af7916ca81b15.bindTooltip(
+                `<div>
+                     神奈川県高津県税事務所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74592426f5a448d6c750e3a2efbcab17 = L.marker(
+                [35.5989579, 139.6087854],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_74592426f5a448d6c750e3a2efbcab17.bindTooltip(
+                `<div>
+                     川崎下作延郵便局
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7039bedaee84c318da5ce28a3429f6d2 = L.marker(
+                [35.6043307, 139.6132712],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_7039bedaee84c318da5ce28a3429f6d2.bindTooltip(
+                `<div>
+                     川崎溝ノ口郵便局
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_621c6ecc30a931960a1f7b2e77b37b94 = L.marker(
+                [35.5782355, 139.6293803],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_621c6ecc30a931960a1f7b2e77b37b94.bindTooltip(
+                `<div>
+                     川崎北公共職業安定所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4d442212f4c153ae88c519c404833b5 = L.marker(
+                [35.5970179, 139.6174289],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_b4d442212f4c153ae88c519c404833b5.bindTooltip(
+                `<div>
+                     川崎北公共職業安定所溝ノ口庁舎
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a7587449f1b65d2768ff5268d5d019 = L.marker(
+                [35.6002396, 139.6221891],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_c1a7587449f1b65d2768ff5268d5d019.bindTooltip(
+                `<div>
+                     地域相談支援センターいまここ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3ca898246e1efec79d7fd28c264b26c = L.marker(
+                [35.6024124, 139.6161775],
+                {}
+            ).addTo(map_f7d068dbf6d8dcdea80738fd7b38e684);
+        
+    
+            marker_c3ca898246e1efec79d7fd28c264b26c.bindTooltip(
+                `<div>
+                     帝京大学附属溝口病院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
