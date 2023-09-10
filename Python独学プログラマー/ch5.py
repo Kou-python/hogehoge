@@ -20,5 +20,6 @@ def output_my_characters():
     key=input("俺の何を知りたい？ >")
     print(my_characters[key])
 
+# set は、順序がなく、異なる型でも値が等価であれば重複していると見なされる。
 s={1, 1.0, True, False}
 print(s)
