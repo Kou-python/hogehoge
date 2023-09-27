@@ -2,7 +2,9 @@ from yt_dlp import YoutubeDL
 import openpyxl
 import time
 from time import sleep
-
+"""
+エクセルファイル作って、リンク列作ることで作動
+"""
 directry='ディレクトリを指定して下さい。'
 
 # ブック取得

@@ -1,27 +1,24 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+import requests
+from bs4 import BeautifulSoup
 
+# ウェブページのURLを指定
+url = 'https://www.python.org/'
 
-def test_eight_components():
-    driver = webdriver.Chrome()
+# ウェブページからデータを取得
+response = requests.get(url)
 
-    driver.get("https://www.selenium.dev/selenium/web/web-form.html")
-
-    title = driver.title
-    assert title == "Web form"
-
-    driver.implicitly_wait(0.5)
-
-    text_box = driver.find_element(by=By.NAME, value="my-text")
-    submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
-
-    text_box.send_keys("Selenium")
-    submit_button.click()
-
-    message = driver.find_element(by=By.ID, value="message")
-    value = message.text
-    assert value == "Received!"
-
-    driver.quit()
+# ページが正常に取得できたかを確認
+if response.status_code == 200:
+    # HTMLコンテンツを解析
+    soup = BeautifulSoup(response.text, 'html.parser')
     
-test_eight_components()
+    # ウェブページから情報を抜き取りたい部分を特定して抽出
+    title = soup.title.text  # タイトルを抽出
+    header = soup.find('div', {'class': 'introduction'}).p.text  # 特定のクラス内のテキストを抽出
+    
+    # 結果を表示
+    print('タイトル:', title)
+    print('ヘッダー:', header)
+else:
+    print('ウェブページの取得に失敗しました。')
+

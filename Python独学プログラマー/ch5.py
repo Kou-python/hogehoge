@@ -23,3 +23,7 @@ def output_my_characters():
 # set は、順序がなく、異なる型でも値が等価であれば重複していると見なされる。
 s={1, 1.0, True, False}
 print(s)
+
+def match_characters():
+    print(my_characters.keys())
+    
